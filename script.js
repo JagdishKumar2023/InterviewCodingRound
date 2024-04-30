@@ -15,7 +15,7 @@
 // console.log(countVowel("SONU"));
 // console.log(countVowel("Kamal"));
 
-//**Question 2**
+//**Question 2** Same method
 
 // function isEven(number) {
 //   return number % 2 === 0;
@@ -24,7 +24,7 @@
 // console.log("This number is", isEven(4));
 // console.log("This number is", isEven(7));
 
-//**Question 3**
+//**Question 3** different method
 
 // function isEven(number) {
 //   if (number % 2 === 0) {
@@ -55,19 +55,19 @@
 // const longestWord = findLongestWord(sentance);
 // console.log(longestWord);
 
-//**Question 5**
+// //**Question 5**
 
-function removeDuplicates(array) {
-  const uniqueArray = [];
+// function removeDuplicates(array) {
+//   const uniqueArray = [];
 
-  for (const element of array) {
-    if (!uniqueArray.includes(element)) {
-      uniqueArray.push(element);
-    }
-  }
-  return uniqueArray;
-}
+//   for (const element of array) {
+//     if (!uniqueArray.includes(element)) {
+//       uniqueArray.push(element);
+//     }
+//   }
+//   return uniqueArray;
+// }
 
-const array = [1, 4, 5, 6, 6, 3, 2, 1, 2];
-const uniqueArray = removeDuplicates(array);
-console.log(uniqueArray);
+// const array = [1, 4, 5, 6, 6, 3, 2, 1, 2];
+// const uniqueArray = removeDuplicates(array);
+// console.log(uniqueArray);
