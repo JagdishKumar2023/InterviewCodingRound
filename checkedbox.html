@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkedbox</title>
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="checkbox1"
+      onchange="handleCheckboxChange(event)"
+    />
+    <label for="checkbox1">Checkbox 1</label>
+
+    <input
+      type="checkbox"
+      id="checkbox2"
+      onchange="handleCheckboxChange(event)"
+    />
+    <label for="checkbox2">Checkbox 2</label>
+  </body>
+</html>
+
+<script>
+  function handleCheckboxChange(event) {
+    const checkbox = event.target;
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      console.log(`${checkbox.id} is checked`);
+      // Perform actions when the checkbox is checked
+    } else {
+      console.log(`${checkbox.id} is unchecked`);
+      // Perform actions when the checkbox is unchecked
+    }
+  }
+
+  const checkbox = event.target;
+  const isChecked = checkbox.checked;
+
+  if (isChecked) {
+    console.log(`${checkbox.id} is checked`);
+  } else {
+    console.log(`${checkbox.id} is checked`);
+  }
+</script>
