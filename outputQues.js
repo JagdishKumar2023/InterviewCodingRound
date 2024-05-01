@@ -27,14 +27,40 @@
 // console.log(isPrime(7)); // Output: true
 // console.log(isPrime(12)); // Output: false
 
-function maxSubarraySum(arr) {
-  let maxSum = arr[0];
-  let currentSum = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    currentSum = Math.max(arr[i], currentSum + arr[i]);
-    maxSum = Math.max(maxSum, currentSum);
+// function maxSubarraySum(arr) {
+//   let maxSum = arr[0];
+//   let currentSum = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     currentSum = Math.max(arr[i], currentSum + arr[i]);
+//     maxSum = Math.max(maxSum, currentSum);
+//   }
+//   return maxSum;
+// }
+
+// console.log(maxSubarraySum([1, -1, 4, -5, -2]));
+
+// function reverseString(str) {
+//   let chars = str.split("");
+
+//   let reversedChars = chars.reverse();
+
+//   let reversedStr = reversedChars.join("");
+
+//   return reversedStr;
+// }
+
+// console.log(reverseString("Jagdish"));
+// console.log(reverseString("Jayesh"));
+
+function outerFunc() {
+  let inner = "I am inner variable";
+  function innerFun() {
+    console.log(inner);
+    console.log(variable);
   }
-  return maxSum;
+  let variable = "this is outer lesical scope";
+  return innerFun;
 }
 
-console.log(maxSubarraySum([1, -1, 4, -5, -2]));
+let outerFunction = outerFunc();
+outerFunction();
