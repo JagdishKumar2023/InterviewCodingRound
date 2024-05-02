@@ -13,6 +13,6 @@ const callApi = (e) => {
 };
 
 const debouncedCallApi = debounce(callApi, 1000);
-console.log(debouncedCallApi);
+// console.log(debouncedCallApi);
 
 inputElement.addEventListener("input", debouncedCallApi);
