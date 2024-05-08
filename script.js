@@ -71,3 +71,5 @@
 // const array = [1, 4, 5, 6, 6, 3, 2, 1, 2];
 // const uniqueArray = removeDuplicates(array);
 // console.log(uniqueArray);
+
+// Question:- 6
