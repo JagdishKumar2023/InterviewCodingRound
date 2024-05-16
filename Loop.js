@@ -20,8 +20,8 @@
 //   console.log(`${key} : ${person[key]} `);
 // }
 
-const numberString = 100;
-const base = "2";
+// const numberString = 100;
+// const base = "2";
 
-const interValue = parseInt(numberString, base);
-console.log(interValue);
+// const interValue = parseInt(numberString, base);
+// console.log(interValue);
