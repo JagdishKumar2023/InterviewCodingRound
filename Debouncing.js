@@ -12,7 +12,7 @@ const callApi = (e) => {
   console.log("Calling API", e.target.value);
 };
 
-const debouncedCallApi = debounce(callApi, 1000);
+const debouncedCallApi = debounce(callApi, 400);
 // console.log(debouncedCallApi);
 
 inputElement.addEventListener("input", debouncedCallApi);

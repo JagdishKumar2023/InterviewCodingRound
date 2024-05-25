@@ -16,3 +16,14 @@ function curridAdd(x) {
 
 const result = curridAdd(1)(2)(3);
 console.log(result);
+
+function Multiply(x) {
+  return function (y) {
+    return function (z) {
+      return x * y * z;
+    };
+  };
+}
+
+let res = Multiply(2)(1)(4);
+console.log(res);
